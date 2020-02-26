@@ -1,0 +1,12 @@
+# Bella
+# 1. Generate in silico database using ART.
+# 2. QIIME 2 stuff.
+# 3. Predict function of 16S. 
+
+# Benny
+# 1. Alignment for 16S using BWA.
+# 2. Alignment for metagenomic using paladin.
+
+# Noah
+# 1. Quality filtering for 16S SAM file.
+# 2. Construct database. 
