@@ -10,3 +10,4 @@
 # Noah
 # 1. Quality filtering for 16S SAM file.
 # 2. Construct database. 
+# focus on SQLlite
