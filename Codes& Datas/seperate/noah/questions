@@ -1,1 +1,10 @@
 SAM to excel or directly to cvs
+
+SQLITE3 DBname 
+IMPORT SQLite3 
+DBconnection cursir
+
+USE (QNAME, POS) together for the primary key.
+
+siliver 
+
