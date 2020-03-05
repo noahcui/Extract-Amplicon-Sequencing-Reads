@@ -2,7 +2,7 @@
 
 # put this script in the same directory where sam files are. 
 # cmd: generate_DB.py DBname tablename1 tablename2... where table name is the name of sam files without ".sam"
-
+# The DBname should be DBname.db, This script only create a new database, can't dealing with a database that already exists.
 
 import sys
 import sqlite3
