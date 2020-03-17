@@ -26,7 +26,7 @@ def create_table(c, table_name):
     print("table created successfully, now inserting datas")
 
 def insert_data(c, table_name, data):
-    cmd = "INSERT INTO " + table_name + "(QNAME, FLAG, RENAME, POS, MAPQ, CIGAR, RNEXT, PNEXT, TLEN, SEQ, QUAL) VALUES (?,?,?,?,?,?,?,?,?,?,?);"
+    cmd = "INSERT INTO " + table_name + "(QNAME, FLAG, RENAME, POS, MAPQ, CIGAR, RNEXT, PNEXT, TLEN, SEQ, QUAL, PS) VALUES (?,?,?,?,?,?,?,?,?,?,?,?);"
     c.execute(cmd, data)
         
 if __name__ == '__main__':
@@ -55,9 +55,10 @@ if __name__ == '__main__':
                         TLEN = fields[8]
                         SEQ = fields[9]
                         QUAL = fields[10]
-                        data = (QNAME, FLAG, RENAME, POS, MAPQ, CIGAR, RNEXT, PNEXT, TLEN, SEQ, QUAL)
+                        PS = fields[11]
+                        data = (QNAME, FLAG, RENAME, POS, MAPQ, CIGAR, RNEXT, PNEXT, TLEN, SEQ, QUAL, PS)
                         insert_data(c, table_name, data)
-                        
+    
     conn.commit()
     conn.close()
             
