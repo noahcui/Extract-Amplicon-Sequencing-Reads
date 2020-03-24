@@ -1,0 +1,224 @@
+/home/unhTW/share/mcbs913_2020/addiction/16S_Reference_Files/BWA_Alignments/ASDFemaleA-aln-pe.sam
+2038400 + 0 in total (QC-passed reads + QC-failed reads)
+0 + 0 secondary
+1306 + 0 supplementary
+0 + 0 duplicates
+30773 + 0 mapped (1.51% : N/A)
+2037094 + 0 paired in sequencing
+1018547 + 0 read1
+1018547 + 0 read2
+23348 + 0 properly paired (1.15% : N/A)
+27226 + 0 with itself and mate mapped
+2241 + 0 singletons (0.11% : N/A)
+2926 + 0 with mate mapped to a different chr
+918 + 0 with mate mapped to a different chr (mapQ>=5)
+/home/unhTW/share/mcbs913_2020/addiction/16S_Reference_Files/BWA_Alignments/ASDFemaleC-aln-pe.sam
+1839071 + 0 in total (QC-passed reads + QC-failed reads)
+0 + 0 secondary
+869 + 0 supplementary
+0 + 0 duplicates
+46626 + 0 mapped (2.54% : N/A)
+1838202 + 0 paired in sequencing
+919101 + 0 read1
+919101 + 0 read2
+42422 + 0 properly paired (2.31% : N/A)
+45018 + 0 with itself and mate mapped
+739 + 0 singletons (0.04% : N/A)
+2300 + 0 with mate mapped to a different chr
+727 + 0 with mate mapped to a different chr (mapQ>=5)
+/home/unhTW/share/mcbs913_2020/addiction/16S_Reference_Files/BWA_Alignments/ASDFemaleE-aln-pe.sam
+3639774 + 0 in total (QC-passed reads + QC-failed reads)
+0 + 0 secondary
+1604 + 0 supplementary
+0 + 0 duplicates
+194275 + 0 mapped (5.34% : N/A)
+3638170 + 0 paired in sequencing
+1819085 + 0 read1
+1819085 + 0 read2
+183124 + 0 properly paired (5.03% : N/A)
+191404 + 0 with itself and mate mapped
+1267 + 0 singletons (0.03% : N/A)
+4584 + 0 with mate mapped to a different chr
+1466 + 0 with mate mapped to a different chr (mapQ>=5)
+/home/unhTW/share/mcbs913_2020/addiction/16S_Reference_Files/BWA_Alignments/ASDHumanDonor-aln-pe.sam
+33430079 + 0 in total (QC-passed reads + QC-failed reads)
+0 + 0 secondary
+23785 + 0 supplementary
+0 + 0 duplicates
+2102362 + 0 mapped (6.29% : N/A)
+33406294 + 0 paired in sequencing
+16703147 + 0 read1
+16703147 + 0 read2
+1986600 + 0 properly paired (5.95% : N/A)
+2065434 + 0 with itself and mate mapped
+13143 + 0 singletons (0.04% : N/A)
+51592 + 0 with mate mapped to a different chr
+17010 + 0 with mate mapped to a different chr (mapQ>=5)
+/home/unhTW/share/mcbs913_2020/addiction/16S_Reference_Files/BWA_Alignments/ASDMaleD-aln-pe.sam
+4127433 + 0 in total (QC-passed reads + QC-failed reads)
+0 + 0 secondary
+2839 + 0 supplementary
+0 + 0 duplicates
+253924 + 0 mapped (6.15% : N/A)
+4124594 + 0 paired in sequencing
+2062297 + 0 read1
+2062297 + 0 read2
+235196 + 0 properly paired (5.70% : N/A)
+247986 + 0 with itself and mate mapped
+3099 + 0 singletons (0.08% : N/A)
+6714 + 0 with mate mapped to a different chr
+1958 + 0 with mate mapped to a different chr (mapQ>=5)
+/home/unhTW/share/mcbs913_2020/addiction/16S_Reference_Files/BWA_Alignments/ASDMaleF-aln-pe.sam
+3913555 + 0 in total (QC-passed reads + QC-failed reads)
+0 + 0 secondary
+2749 + 0 supplementary
+0 + 0 duplicates
+231114 + 0 mapped (5.91% : N/A)
+3910806 + 0 paired in sequencing
+1955403 + 0 read1
+1955403 + 0 read2
+218618 + 0 properly paired (5.59% : N/A)
+225398 + 0 with itself and mate mapped
+2967 + 0 singletons (0.08% : N/A)
+4924 + 0 with mate mapped to a different chr
+1588 + 0 with mate mapped to a different chr (mapQ>=5)
+/home/unhTW/share/mcbs913_2020/addiction/16S_Reference_Files/BWA_Alignments/ASDMaleH-aln-pe.sam
+3176968 + 0 in total (QC-passed reads + QC-failed reads)
+0 + 0 secondary
+1662 + 0 supplementary
+0 + 0 duplicates
+190554 + 0 mapped (6.00% : N/A)
+3175306 + 0 paired in sequencing
+1587653 + 0 read1
+1587653 + 0 read2
+183244 + 0 properly paired (5.77% : N/A)
+187692 + 0 with itself and mate mapped
+1200 + 0 singletons (0.04% : N/A)
+3356 + 0 with mate mapped to a different chr
+1032 + 0 with mate mapped to a different chr (mapQ>=5)
+/home/unhTW/share/mcbs913_2020/addiction/16S_Reference_Files/BWA_Alignments/NAMaleA-aln-pe.sam
+3790068 + 0 in total (QC-passed reads + QC-failed reads)
+0 + 0 secondary
+8636 + 0 supplementary
+0 + 0 duplicates
+88947 + 0 mapped (2.35% : N/A)
+3781432 + 0 paired in sequencing
+1890716 + 0 read1
+1890716 + 0 read2
+19638 + 0 properly paired (0.52% : N/A)
+24326 + 0 with itself and mate mapped
+55985 + 0 singletons (1.48% : N/A)
+2740 + 0 with mate mapped to a different chr
+854 + 0 with mate mapped to a different chr (mapQ>=5)
+/home/unhTW/share/mcbs913_2020/addiction/16S_Reference_Files/BWA_Alignments/NAMaleB-aln-pe.sam
+7347966 + 0 in total (QC-passed reads + QC-failed reads)
+0 + 0 secondary
+18790 + 0 supplementary
+0 + 0 duplicates
+271108 + 0 mapped (3.69% : N/A)
+7329176 + 0 paired in sequencing
+3664588 + 0 read1
+3664588 + 0 read2
+139080 + 0 properly paired (1.90% : N/A)
+149164 + 0 with itself and mate mapped
+103154 + 0 singletons (1.41% : N/A)
+6384 + 0 with mate mapped to a different chr
+2070 + 0 with mate mapped to a different chr (mapQ>=5)
+/home/unhTW/share/mcbs913_2020/addiction/16S_Reference_Files/BWA_Alignments/NAMaleC-aln-pe.sam
+2041538 + 0 in total (QC-passed reads + QC-failed reads)
+0 + 0 secondary
+4698 + 0 supplementary
+0 + 0 duplicates
+163594 + 0 mapped (8.01% : N/A)
+2036840 + 0 paired in sequencing
+1018420 + 0 read1
+1018420 + 0 read2
+136916 + 0 properly paired (6.72% : N/A)
+140948 + 0 with itself and mate mapped
+17948 + 0 singletons (0.88% : N/A)
+2258 + 0 with mate mapped to a different chr
+770 + 0 with mate mapped to a different chr (mapQ>=5)
+/home/unhTW/share/mcbs913_2020/addiction/16S_Reference_Files/BWA_Alignments/TDFemaleB-aln-pe.sam
+2911276 + 0 in total (QC-passed reads + QC-failed reads)
+0 + 0 secondary
+2478 + 0 supplementary
+0 + 0 duplicates
+141217 + 0 mapped (4.85% : N/A)
+2908798 + 0 paired in sequencing
+1454399 + 0 read1
+1454399 + 0 read2
+129742 + 0 properly paired (4.46% : N/A)
+135460 + 0 with itself and mate mapped
+3279 + 0 singletons (0.11% : N/A)
+3950 + 0 with mate mapped to a different chr
+1297 + 0 with mate mapped to a different chr (mapQ>=5)
+/home/unhTW/share/mcbs913_2020/addiction/16S_Reference_Files/BWA_Alignments/TDFemaleD-aln-pe.sam
+6443811 + 0 in total (QC-passed reads + QC-failed reads)
+0 + 0 secondary
+7777 + 0 supplementary
+0 + 0 duplicates
+298023 + 0 mapped (4.62% : N/A)
+6436034 + 0 paired in sequencing
+3218017 + 0 read1
+3218017 + 0 read2
+247602 + 0 properly paired (3.85% : N/A)
+261772 + 0 with itself and mate mapped
+28474 + 0 singletons (0.44% : N/A)
+8626 + 0 with mate mapped to a different chr
+2706 + 0 with mate mapped to a different chr (mapQ>=5)
+/home/unhTW/share/mcbs913_2020/addiction/16S_Reference_Files/BWA_Alignments/TDFemaleF-aln-pe.sam
+2912825 + 0 in total (QC-passed reads + QC-failed reads)
+0 + 0 secondary
+1765 + 0 supplementary
+0 + 0 duplicates
+62216 + 0 mapped (2.14% : N/A)
+2911060 + 0 paired in sequencing
+1455530 + 0 read1
+1455530 + 0 read2
+52294 + 0 properly paired (1.80% : N/A)
+58326 + 0 with itself and mate mapped
+2125 + 0 singletons (0.07% : N/A)
+4318 + 0 with mate mapped to a different chr
+1409 + 0 with mate mapped to a different chr (mapQ>=5)
+/home/unhTW/share/mcbs913_2020/addiction/16S_Reference_Files/BWA_Alignments/TDMaleE-aln-pe.sam
+3637114 + 0 in total (QC-passed reads + QC-failed reads)
+0 + 0 secondary
+1702 + 0 supplementary
+0 + 0 duplicates
+205948 + 0 mapped (5.66% : N/A)
+3635412 + 0 paired in sequencing
+1817706 + 0 read1
+1817706 + 0 read2
+197134 + 0 properly paired (5.42% : N/A)
+203120 + 0 with itself and mate mapped
+1126 + 0 singletons (0.03% : N/A)
+4230 + 0 with mate mapped to a different chr
+1355 + 0 with mate mapped to a different chr (mapQ>=5)
+/home/unhTW/share/mcbs913_2020/addiction/16S_Reference_Files/BWA_Alignments/TDMaleG-aln-pe.sam
+3376486 + 0 in total (QC-passed reads + QC-failed reads)
+0 + 0 secondary
+1730 + 0 supplementary
+0 + 0 duplicates
+210722 + 0 mapped (6.24% : N/A)
+3374756 + 0 paired in sequencing
+1687378 + 0 read1
+1687378 + 0 read2
+201676 + 0 properly paired (5.98% : N/A)
+207592 + 0 with itself and mate mapped
+1400 + 0 singletons (0.04% : N/A)
+3778 + 0 with mate mapped to a different chr
+1177 + 0 with mate mapped to a different chr (mapQ>=5)
+/home/unhTW/share/mcbs913_2020/addiction/16S_Reference_Files/BWA_Alignments/TDMaleI-aln-pe.sam
+1967792 + 0 in total (QC-passed reads + QC-failed reads)
+0 + 0 secondary
+1076 + 0 supplementary
+0 + 0 duplicates
+16731 + 0 mapped (0.85% : N/A)
+1966716 + 0 paired in sequencing
+983358 + 0 read1
+983358 + 0 read2
+11506 + 0 properly paired (0.59% : N/A)
+14576 + 0 with itself and mate mapped
+1079 + 0 singletons (0.05% : N/A)
+2786 + 0 with mate mapped to a different chr
+891 + 0 with mate mapped to a different chr (mapQ>=5)
