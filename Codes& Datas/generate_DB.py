@@ -10,7 +10,7 @@ import sqlite3
 
 
 def create_table(c, table_name):
-    cmd = "create table " + table_name + "(QNAME text,\
+    cmd = "create or replace table " + table_name + "(QNAME text,\
         FLAG int,\
         RENAME text,\
         POS int,\
