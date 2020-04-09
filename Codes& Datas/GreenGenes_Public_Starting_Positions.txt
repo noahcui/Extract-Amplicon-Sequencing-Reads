@@ -1,0 +1,260 @@
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.6114
+Reference: 4316316
+Position: 371
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.74210
+Reference: 172233
+Position: 1
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.90950
+Reference: 4316316
+Position: 371
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.108138
+Reference: 4316316
+Position: 371
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.112324
+Reference: 4316316
+Position: 370
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.113721
+Reference: 542078
+Position: 1433
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.123132
+Reference: 4316316
+Position: 370
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.123132
+Reference: 4316316
+Position: 366
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.167261
+Reference: 4316316
+Position: 370
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.172618
+Reference: 4316316
+Position: 371
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.211983
+Reference: 4316316
+Position: 369
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.212615
+Reference: 4316316
+Position: 370
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.258021
+Reference: 4316316
+Position: 371
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.259030
+Reference: 4316316
+Position: 370
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.291496
+Reference: 232273
+Position: 1333
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.297753
+Reference: 4316316
+Position: 369
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.298326
+Reference: 4316316
+Position: 370
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.320825
+Reference: 4316316
+Position: 371
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.325972
+Reference: 4316316
+Position: 370
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.347514
+Reference: 4316316
+Position: 371
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.358459
+Reference: 4316316
+Position: 370
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.398478
+Reference: 4316316
+Position: 370
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.399908
+Reference: 4316316
+Position: 370
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.406536
+Reference: 4316316
+Position: 370
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.447910
+Reference: 4316316
+Position: 371
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.470191
+Reference: 847376
+Position: 940
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.472762
+Reference: 4316316
+Position: 371
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.538677
+Reference: 4316316
+Position: 370
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.541362
+Reference: 811615
+Position: 1
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.546098
+Reference: 4316316
+Position: 370
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.547235
+Reference: 4316316
+Position: 370
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.589225
+Reference: 4316316
+Position: 371
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.594655
+Reference: 4316316
+Position: 370
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.636322
+Reference: 4316316
+Position: 369
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.645178
+Reference: 323411
+Position: 2
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.665950
+Reference: 4316316
+Position: 370
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.665950
+Reference: 4316316
+Position: 370
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.668913
+Reference: 4316316
+Position: 371
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.668913
+Reference: 4316316
+Position: 371
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.676285
+Reference: 4316316
+Position: 370
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.688863
+Reference: 227565
+Position: 1
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.694744
+Reference: 4485225
+Position: 1
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.740360
+Reference: 4316316
+Position: 370
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.741738
+Reference: 70424
+Position: 1363
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.755941
+Reference: 4316316
+Position: 370
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.769328
+Reference: 251964
+Position: 1433
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.803724
+Reference: 4316316
+Position: 370
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.812248
+Reference: 4316316
+Position: 370
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.868144
+Reference: 4445444
+Position: 1397
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.910182
+Reference: 4316316
+Position: 371
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.955923
+Reference: 4461932
+Position: 1292
+
+File: Green_TD-MaleI_QualityFiltered.sam
+Query: ERR3144319.978953
+Reference: 4316316
+Position: 370
+
