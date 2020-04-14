@@ -7,9 +7,7 @@ import sqlite3
 def create_table(c, table_name):
     cmd = "create table fasta(Reference text,\
         Query text,\
-        File text,\
-        StartPOS text,\
-        primary key(Reference, File));"
+        primary key(Reference));"
     c.execute(cmd)
     print("table created successfully, now inserting datas")
 

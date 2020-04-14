@@ -20,7 +20,7 @@ if __name__ == '__main__':
     dbname = sys.argv[1]
     conn = sqlite3.connect(dbname)
     c = conn.cursor()
-    table_name = sys.argv[2]
+    table_name = "startPOS"
     create_table(c, table_name)
     for i in range(len(sys.argv)):
         if i > 2:
