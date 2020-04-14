@@ -26,9 +26,10 @@ if __name__ == '__main__':
         if i > 1:
             #directiory
             file_name = sys.argv[i]
-            count = 0
+            count = -1
             with open(file_name, "r") as pos_file:
                 for line in pos_file:
+                    count = count + 1
                     if count % 5 == 0:
                         File = line.replace('File: ', '')
                     if count % 5 == 1:
@@ -40,6 +41,6 @@ if __name__ == '__main__':
                     else:
                         data = (File, Query, Reference, Position)
                         insert_data(c, table_name, data)
-                    count = count + 1
+                    
     conn.commit()
     conn.close()
