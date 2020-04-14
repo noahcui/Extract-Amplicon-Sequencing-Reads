@@ -16,12 +16,7 @@ def insert_data(c, table_name, data):
     c.execute(cmd, data)
 
 if __name__ == '__main__':
-    conn = None
-    dbname = sys.argv[1]
-    conn = sqlite3.connect(dbname)
-    c = conn.cursor()
-    table_name = "startPOS"
-    create_table(c, table_name)
+    
     for i in range(len(sys.argv)):
         if i > 1:
             #directiory
@@ -43,8 +38,6 @@ if __name__ == '__main__':
                         Query.replace('\r','')
                         Reference.replace('\r','')
                         Position.replace('\r','')
-                        data = (File, Query, Reference, Position)
-                        insert_data(c, table_name, data)
+                        print(File)
+
                     
-    conn.commit()
-    conn.close()
