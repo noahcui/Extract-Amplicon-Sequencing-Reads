@@ -27,7 +27,7 @@ if __name__ == '__main__':
             fields = line.split(" ")
             Query = ''
             if '>'in fields[0]:
-                if Query != "None":
+                if Query != '':
                     print("reference: ", Reference)
                     print("query: ", Query)
                 Reference = fields[0]
