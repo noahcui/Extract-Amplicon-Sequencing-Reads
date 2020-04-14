@@ -32,11 +32,11 @@ if __name__ == '__main__':
                     count = count + 1
                     if count % 5 == 0:
                         File = line.replace('File: ', '')
-                    if count % 5 == 1:
+                    elif count % 5 == 1:
                         Query = line.replace('Query: ', '')
-                    if count % 5 == 2:
+                    elif count % 5 == 2:
                         Reference = line.replace('Reference: ', '')
-                    if count % 5 == 3:
+                    elif count % 5 == 3:
                         Position = line.replace('Position: ', '')
                     else:
                         data = (File, Query, Reference, Position)
