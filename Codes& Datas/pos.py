@@ -31,18 +31,15 @@ if __name__ == '__main__':
                 for line in pos_file:
                     if count % 5 == 0:
                         File = line.replace('File: ', '')
-                        count = count + 1
                     if count % 5 == 1:
                         Query = line.replace('Query: ', '')
-                        count = count + 1
                     if count % 5 == 2:
                         Reference = line.replace('Reference: ', '')
-                        count = count + 1
                     if count % 5 == 3:
                         Position = line.replace('Position: ', '')
-                        count = count + 1
                     else:
                         data = (File, Query, Reference, Position)
                         insert_data(c, table_name, data)
+                    count = count + 1
     conn.commit()
     conn.close()
