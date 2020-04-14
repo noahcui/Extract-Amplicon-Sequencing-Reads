@@ -34,5 +34,5 @@ if __name__ == '__main__':
                 Query = ''
             else:
                 Query = Query + line.replace('\n','')
-        print("reference: ", Reference)
-        print("query: ", Query)
+        print("referenceend: ", Reference)
+        print("queryend: ", Query)
