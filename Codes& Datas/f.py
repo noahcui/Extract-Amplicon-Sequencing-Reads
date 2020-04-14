@@ -5,7 +5,7 @@ import sqlite3
 
 
 def create_table(c, table_name):
-    cmd = "create or replace table fasta(Reference text,\
+    cmd = "create table fasta(Reference text,\
         Query text,\
         File text,\
         StartPOS text,\
