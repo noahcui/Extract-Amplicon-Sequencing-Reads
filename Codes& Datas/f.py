@@ -22,15 +22,15 @@ def insert_data(c, table_name, data):
 if __name__ == '__main__':
     file_name = "Silva.fasta"
     c = 0
+    Query = ''
     with open(file_name, "r") as pos_file:
         for line in pos_file:
             fields = line.split(" ")
-            Query = ''
-            Reference = ''
             if '>'in line:
-                print("reference: ", Reference)
-                print("query: ", Query)
-                Query = ''
+                if Query != '':
+                    print("reference: ", Reference)
+                    print("query: ", Query)
+                    Query = ''
                 Reference = fields[0].replace('>','')
             else:
                 Query = Query + line.replace('\n','')
