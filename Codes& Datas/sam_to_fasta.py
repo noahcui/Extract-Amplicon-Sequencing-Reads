@@ -29,3 +29,4 @@ try:
                         output.write("{0}\n".format(sequence))
 except IOError:
     print("An error has occurred.")
+

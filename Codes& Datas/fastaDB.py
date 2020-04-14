@@ -20,31 +20,29 @@ if __name__ == '__main__':
     dbname = sys.argv[1]
     conn = sqlite3.connect(dbname)
     c = conn.cursor()
-    print("files oppened successfully, now creating tables")
+    table_name = sys.argv[2]
+    create_table(c, table_name)
     for i in range(len(sys.argv)):
-        if i > 1:
-            table_name = sys.argv[i]
-            create_table(c, table_name)
-            file_name = table_name+".sam"
-            INFO = None
-            with open(file_name, "r") as sam_file:
-                for line in sam_file:
-                    if ">" in line:
-                        if INFO != None：
-                            data = (INFO, SEQ, START, END)
-                            insert_data(c, table_name, data)
-
-                        INFO = line
-                        START = 
-                        END = 
+        if i > 2:
+            #directiory
+            file_name = sys.argv[i]
+            c = 0
+            with open(file_name, "r") as pos_file:
+                for line in pos_file:
+                    if c % 5 == 0:
+                        File = line.replace('File: ', '')
+                        c = c + 1
+                    if c % 5 == 1:
+                        Query = line.replace('Query: ', '')
+                        c = c + 1
+                    if c % 5 == 2:
+                        Reference = line.replace('Reference: ', '')
+                        c = c + 1
+                    if c % 5 == 3:
+                        Position = line.replace('Position: ', '')
+                        c = c + 1
                     else:
-                        line.replace("\n","")
-                        line.replace("\r","")
-                        SEQ = SEQ + line
-                        
-            data = (INFO, SEQ, START, END)
-            insert_data(c, table_name, data)
-                        
-    
+                        data = (File, Query, Reference, Position)
+                        insert_data(c, table_name, data)
     conn.commit()
     conn.close()
