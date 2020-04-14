@@ -38,6 +38,6 @@ if __name__ == '__main__':
                         Query.replace('\r','')
                         Reference.replace('\r','')
                         Position.replace('\r','')
-                        print(File)
+                        print("File",File)
 
                     
