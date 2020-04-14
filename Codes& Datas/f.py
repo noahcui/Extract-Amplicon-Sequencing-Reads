@@ -30,7 +30,7 @@ if __name__ == '__main__':
                 if Query != '':
                     print("reference: ", Reference)
                     print("query: ", Query)
-                Reference = fields[0].replace('<','')
+                Reference = fields[0].replace('>','')
                 Query = ''
             else:
                 Query = Query + line.replace('\n','')
