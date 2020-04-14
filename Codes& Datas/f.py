@@ -26,6 +26,7 @@ if __name__ == '__main__':
         for line in pos_file:
             fields = line.split(" ")
             Query = ''
+            Reference = ''
             if '>'in line:
                 print("reference: ", Reference)
                 print("query: ", Query)
