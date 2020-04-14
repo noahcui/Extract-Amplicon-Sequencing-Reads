@@ -34,7 +34,7 @@ if __name__ == '__main__':
                     elif count % 5 == 3:
                         Position = line.replace('Position: ', '')
                     else:
-                        File.replace('\n','')
+                        File.replace("\n",'')
                         Query.replace('\n','')
                         Reference.replace('\n','')
                         Position.replace('\n','')
