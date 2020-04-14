@@ -5,15 +5,18 @@ import sqlite3
 
 
 def create_table(c, table_name):
-    cmd = "create or replace table fasta (Reference,text\
-        Query, text);"
+    cmd = "create or replace table fasta (Reference text\
+        Query text\
+        File text\
+        StartPOS text\
+        primary key(Reference, File));"
     c.execute(cmd)
     print("table created successfully, now inserting datas")
 
 
 def insert_data(c, table_name, data):
     cmd = "INSERT INTO " + table_name + \
-        "(INFO, SEQ, START, END) VALUES (?,?,?,?);"
+        "(Reference, Query) VALUES (?,?);"
     c.execute(cmd, data)
 
 
