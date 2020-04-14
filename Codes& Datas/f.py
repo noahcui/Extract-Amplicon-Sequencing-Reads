@@ -26,13 +26,12 @@ if __name__ == '__main__':
         for line in pos_file:
             fields = line.split(" ")
             Query = ''
-            if '>'in fields[0]:
+            if '>'in line:
                 if Query != '':
                     print("reference: ", Reference)
                     print("query: ", Query)
                     Query = ''
                 Reference = fields[0].replace('>','')
-                
             else:
                 Query = Query + line.replace('\n','')
         print("referenceend: ", Reference)
