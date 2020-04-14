@@ -39,12 +39,7 @@ if __name__ == '__main__':
                     elif count % 5 == 3:
                         Position = line.replace('Position: ', '')
                     else:
-                        File.replace('\n','')
-                        Query.replace('\n','')
-                        Reference.replace('\n','')
-                        Position.replace('\n','')
-                        print("file", File)
-                        data = (File, Query, Reference, Position)
+                        data = (File.replace('\n',''), Query.replace('\n',''), Reference.replace('\n',''), Position.replace('\n',''))
                         insert_data(c, table_name, data)
                     
     conn.commit()
