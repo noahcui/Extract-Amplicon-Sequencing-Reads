@@ -5,10 +5,10 @@ import sqlite3
 
 
 def create_table(c, table_name):
-    cmd = "create or replace table fasta(Reference text\
-        Query text\
-        File text\
-        StartPOS text\
+    cmd = "create or replace table fasta(Reference text,\
+        Query text,\
+        File text,\
+        StartPOS text,\
         primary key(Reference, File));"
     c.execute(cmd)
     print("table created successfully, now inserting datas")
