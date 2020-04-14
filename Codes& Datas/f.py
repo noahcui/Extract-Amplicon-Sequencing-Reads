@@ -20,7 +20,7 @@ def insert_data(c, table_name, data):
 
 
 if __name__ == '__main__':
-    file_name = sys.argv[i]
+    file_name = "Silva.fasta"
     c = 0
     with open(file_name, "r") as pos_file:
         for line in pos_file:
