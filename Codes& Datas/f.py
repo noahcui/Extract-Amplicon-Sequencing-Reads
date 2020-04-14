@@ -25,9 +25,9 @@ if __name__ == '__main__':
     with open(file_name, "r") as pos_file:
         for line in pos_file:
             fields = line.split(" ")
-            Query = None
+            Query = "None"
             if '>'in fields[0]:
-                if Query != None:
+                if Query != "None":
                     print("reference: ", Reference)
                     print("query: ", Query)
                 Reference = fields[0]
