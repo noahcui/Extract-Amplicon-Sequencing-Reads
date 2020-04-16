@@ -18,7 +18,7 @@ def create_table_pos(c, table_name):
     c.execute(cmd)
     print("table created successfully, now inserting datas")
 
-def create_table(c, table_name):
+def create_table_sam(c, table_name):
     cmd = "create table " + table_name + "(QNAME text,\
         FLAG int,\
         RENAME text,\
@@ -43,7 +43,7 @@ if __name__ == '__main__':
     conn = sqlite3.connect(dbname)
     c = conn.cursor()
     create_table_fasta(c, "fasta")
-    create_table(c, 'sam')
-    create_table(c, 'startPOS')
+    create_table_sam(c, 'sam')
+    create_table_pos(c, 'startPOS')
     conn.commit()
     conn.close()
