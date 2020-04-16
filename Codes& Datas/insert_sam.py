@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 # put this script in the same directory where sam files are. 
-# cmd: generate_DB.py DBname tablename1 tablename2... where table name is the name of sam files without ".sam"
+# cmd: generate_DB.py DBname tablename1 tablename2... where table name is the name of sam files
 # The DBname should be DBname.db, This script only create a new database, can't dealing with a database that already exists.
 
 import sys
@@ -10,7 +10,7 @@ import sqlite3
 
 
 def create_table(c, table_name):
-    cmd = "create or replace table " + table_name + "(QNAME text,\
+    cmd = "create table " + table_name + "(QNAME text,\
         FLAG int,\
         RENAME text,\
         POS int,\
@@ -21,7 +21,8 @@ def create_table(c, table_name):
         TLEN int,\
         SEQ text,\
         QUAL text,\
-        primary key(QNAME, POS));"
+        INFO text,\
+        FILE text);"
     c.execute(cmd)
     print("table created successfully, now inserting datas")
 
@@ -35,7 +36,7 @@ def insert_headers(c, table_name, data):
     c.execute(cmd, data)
 
 def insert_data(c, table_name, data):
-    cmd = "INSERT INTO " + table_name + "(QNAME, FLAG, RENAME, POS, MAPQ, CIGAR, RNEXT, PNEXT, TLEN, SEQ, QUAL, PS) VALUES (?,?,?,?,?,?,?,?,?,?,?,?);"
+    cmd = "INSERT INTO " + table_name + "(QNAME, FLAG, RENAME, POS, MAPQ, CIGAR, RNEXT, PNEXT, TLEN, SEQ, QUAL, INFO, FILE) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?);"
     c.execute(cmd, data)
         
 if __name__ == '__main__':
@@ -47,8 +48,8 @@ if __name__ == '__main__':
     for i in range(len(sys.argv)):
         if i > 1:
             table_name = sys.argv[i]
-            create_table(c, table_name)
-            file_name = table_name+".sam"
+            file_name = table_name
+            print("file writing: ", file_name)
             with open(file_name, "r") as sam_file:
                 for line in sam_file:
                     fields = line.split("\t")
@@ -64,9 +65,9 @@ if __name__ == '__main__':
                         TLEN = fields[8]
                         SEQ = fields[9]
                         QUAL = fields[10]
-                        PS = fields[11]
-                        data = (QNAME, FLAG, RENAME, POS, MAPQ, CIGAR, RNEXT, PNEXT, TLEN, SEQ, QUAL, PS)
-                        insert_data(c, table_name, data)
+                        INFO = fields[11]
+                        data = (QNAME, FLAG, RENAME, POS, MAPQ, CIGAR, RNEXT, PNEXT, TLEN, SEQ, QUAL, INFO, file_name)
+                        insert_data(c, 'sam', data)
     
     conn.commit()
     conn.close()

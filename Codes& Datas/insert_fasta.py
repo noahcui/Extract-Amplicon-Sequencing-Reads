@@ -24,7 +24,6 @@ if __name__ == '__main__':
     dbname = sys.argv[1]
     conn = sqlite3.connect(dbname)
     c = conn.cursor()
-    create_table(c, "fasta")
     Query = ''
     with open(file_name, "r") as pos_file:
         for line in pos_file:

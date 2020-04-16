@@ -21,7 +21,6 @@ if __name__ == '__main__':
     conn = sqlite3.connect(dbname)
     c = conn.cursor()
     table_name = "startPOS"
-    create_table(c, table_name)
     for i in range(len(sys.argv)):
         if i > 1:
             #directiory
