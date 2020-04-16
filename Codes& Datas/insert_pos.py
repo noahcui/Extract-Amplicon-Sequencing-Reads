@@ -26,6 +26,7 @@ if __name__ == '__main__':
             #directiory
             file_name = sys.argv[i]
             count = -1
+            print("file: ", file_name)
             with open(file_name, "r") as pos_file:
                 for line in pos_file:
                     count = count + 1
