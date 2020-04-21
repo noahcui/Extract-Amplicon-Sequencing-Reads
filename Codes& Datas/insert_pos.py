@@ -4,15 +4,13 @@ import sys
 import sqlite3
 
 def create_table(c, table_name):
-    cmd = "create table " + table_name + "(File text,\
-        Query text,\
-        Reference text,\
-        Position int);"
+    cmd = "create table " + table_name + "(Header text,\
+        start_POS int);"
     c.execute(cmd)
     print("table created successfully, now inserting datas")
 
 def insert_data(c, table_name, data):
-    cmd = "INSERT INTO " + table_name + "(File, Query, Reference, Position) VALUES (?,?,?,?);"
+    cmd = "INSERT INTO " + table_name + "(Header, Start_POS) VALUES (?,?);"
     c.execute(cmd, data)
 
 if __name__ == '__main__':
@@ -25,22 +23,29 @@ if __name__ == '__main__':
         if i > 1:
             #directiory
             file_name = sys.argv[i]
-            count = -1
             print("file: ", file_name)
             with open(file_name, "r") as pos_file:
                 for line in pos_file:
-                    count = count + 1
-                    if count % 5 == 0:
-                        File = line.replace('File: ', '')
-                    elif count % 5 == 1:
-                        Query = line.replace('Query: ', '')
-                    elif count % 5 == 2:
-                        Reference = line.replace('Reference: ', '')
-                    elif count % 5 == 3:
-                        Position = line.replace('Position: ', '')
+                    h = False
+                    fields = line.split(" ")
+                    if h:
+                        if 'Starting' in line:
+                            POS = fields[2].replace('\n')
+                            h = False
+                            data = (Header, pos)
+                            insert_data(c, table_name, data)
+                        else:
+                            pos = -1
+                            h = False
+                            data = (Header, pos)
+                            insert_data(c, table_name, data)
+                            if 'header' in line:
+                                h = True
+                                Header = fields[1].replace('>','')
                     else:
-                        data = (File.replace('\n',''), Query.replace('\n',''), Reference.replace('\n',''), Position.replace('\n',''))
-                        insert_data(c, table_name, data)
+                        if 'header' in line:
+                            h = True
+                            Header = fields[1].replace('>','')
                     
     conn.commit()
     conn.close()

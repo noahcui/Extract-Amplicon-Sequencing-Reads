@@ -11,10 +11,8 @@ def create_table_fasta(c, table_name):
     print("table created successfully, now inserting datas")
 
 def create_table_pos(c, table_name):
-    cmd = "create table " + table_name + "(File text,\
-        Query text,\
-        Reference text,\
-        Position int);"
+    cmd = "create table " + table_name + "(Header text,\
+        start_POS int);"
     c.execute(cmd)
     print("table created successfully, now inserting datas")
 
@@ -30,8 +28,9 @@ def create_table_sam(c, table_name):
         TLEN int,\
         SEQ text,\
         QUAL text,\
-        INFO text,\
-        FILE text);"
+        TAG text,\
+        FILE text\
+        primary key(QNAME, POS, FLAG, FILE));"
     c.execute(cmd)
     print("table created successfully, now inserting datas")
 
