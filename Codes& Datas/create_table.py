@@ -4,20 +4,23 @@ import sys
 import sqlite3
 
 def create_table_fasta(c, table_name):
-    cmd = "create table fasta(Reference text,\
-        Query text,\
+    cmd = "create table fasta(Header text,\
+        Seq text,\
         primary key(Reference));"
     c.execute(cmd)
     print("table created successfully, now inserting datas")
 
 def create_table_pos(c, table_name):
     cmd = "create table " + table_name + "(Header text,\
-        start_POS int);"
+        R_start_POS int,\
+        F_start_POS int,\
+        primary key(Header));"
     c.execute(cmd)
     print("table created successfully, now inserting datas")
 
 def create_table_sam(c, table_name):
     cmd = "create table " + table_name + "(QNAME text,\
+        NUM int,\
         FLAG int,\
         RENAME text,\
         POS int,\
@@ -29,8 +32,8 @@ def create_table_sam(c, table_name):
         SEQ text,\
         QUAL text,\
         TAG text,\
-        FILE text\
-        primary key(QNAME, POS, FLAG, FILE));"
+        FILE text,\
+        primary key(QNAME, NUM));"
     c.execute(cmd)
     print("table created successfully, now inserting datas")
 

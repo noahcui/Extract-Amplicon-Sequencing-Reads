@@ -14,7 +14,7 @@ def create_table(c, table_name):
 
 def insert_data(c, table_name, data):
     cmd = "INSERT INTO " + table_name + \
-        "(Reference, Query) VALUES (?,?);"
+        "(Header, Seq) VALUES (?,?);"
     c.execute(cmd, data)
 
 

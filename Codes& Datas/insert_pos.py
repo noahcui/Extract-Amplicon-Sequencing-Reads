@@ -9,9 +9,20 @@ def create_table(c, table_name):
     c.execute(cmd)
     print("table created successfully, now inserting datas")
 
-def insert_data(c, table_name, data):
-    cmd = "INSERT INTO " + table_name + "(Header, Start_POS) VALUES (?,?);"
+def insert_forward(c, table_name, data):
+    cmd = "INSERT OR IGNORE INTO " + table_name + " (Header, F_start_POS) VALUES(?,?);"
+    cmd2 = "UPDATE " + table_name + " SET F_start_POS = ? WHERE Header = ?;"
     c.execute(cmd, data)
+    data2 = (data[1],data[0])
+    c.execute(cmd2, data2)
+
+def insert_reverse(c, table_name, data):
+    cmd = "INSERT OR IGNORE INTO " + table_name + " (Header, R_start_POS) VALUES(?,?);"
+    cmd2 = "UPDATE " + table_name + " SET R_start_POS = ? WHERE Header = ?;"
+    c.execute(cmd, data)
+    data2 = (data[1],data[0])
+    c.execute(cmd2, data2)
+
 
 if __name__ == '__main__':
     conn = None
@@ -22,28 +33,40 @@ if __name__ == '__main__':
     for i in range(len(sys.argv)):
         if i > 1:
             #directiory
+            h = False
             file_name = sys.argv[i]
+            if 'Forward' in file_name:
+                F = True
+            else: 
+                F = False
             print("file: ", file_name)
             with open(file_name, "r") as pos_file:
                 for line in pos_file:
-                    h = False
                     fields = line.split(" ")
                     if h:
                         if 'Starting' in line:
-                            POS = fields[2].replace('\n')
+                            POS = fields[2].replace('\n','')
                             h = False
-                            data = (Header, pos)
-                            insert_data(c, table_name, data)
+                            data = (Header, POS)
+                            if F :
+                                insert_forward(c, table_name, data)
+                            else:
+                                insert_reverse(c, table_name, data)
+                            
                         else:
-                            pos = -1
+                            POS = -1
                             h = False
-                            data = (Header, pos)
-                            insert_data(c, table_name, data)
-                            if 'header' in line:
+                            data = (Header, POS)
+                            if F :
+                                insert_forward(c, table_name, data)
+                            else:
+                                insert_reverse(c, table_name, data)
+
+                            if 'Header' in line:
                                 h = True
                                 Header = fields[1].replace('>','')
                     else:
-                        if 'header' in line:
+                        if 'Header' in line:
                             h = True
                             Header = fields[1].replace('>','')
                     

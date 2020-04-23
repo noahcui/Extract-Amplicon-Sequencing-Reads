@@ -23,7 +23,7 @@ def create_table(c, table_name):
         QUAL text,\
         TAG text,\
         FILE text\
-        primary key(QNAME, POS, FLAG, FILE));"
+        primary key(QNAME, NUM));"
     c.execute(cmd)
     print("table created successfully, now inserting datas")
 
@@ -37,7 +37,7 @@ def insert_headers(c, table_name, data):
     c.execute(cmd, data)
 
 def insert_data(c, table_name, data):
-    cmd = "INSERT INTO " + table_name + "(QNAME, FLAG, RENAME, POS, MAPQ, CIGAR, RNEXT, PNEXT, TLEN, SEQ, QUAL, TAG, FILE) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?);"
+    cmd = "INSERT INTO " + table_name + "(QNAME, NUM, FLAG, RENAME, POS, MAPQ, CIGAR, RNEXT, PNEXT, TLEN, SEQ, QUAL, TAG, FILE) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?);"
     c.execute(cmd, data)
         
 if __name__ == '__main__':
@@ -46,6 +46,7 @@ if __name__ == '__main__':
     conn = sqlite3.connect(dbname)
     c = conn.cursor()
     print("files oppened successfully, now creating tables")
+    dict = {}
     for i in range(len(sys.argv)):
         if i > 1:
             table_name = sys.argv[i]
@@ -67,7 +68,14 @@ if __name__ == '__main__':
                         SEQ = fields[9]
                         QUAL = fields[10]
                         TAG= fields[11]
-                        data = (QNAME, FLAG, RENAME, POS, MAPQ, CIGAR, RNEXT, PNEXT, TLEN, SEQ, QUAL, TAG, file_name)
+                        if QNAME in dict:
+                            dict[QNAME] = dict[QNAME] + 1
+                            NUM = dict[QNAME]
+                        else:
+                            dict[QNAME] = 0
+                            NUM = 0
+                        data = (QNAME, NUM, FLAG, RENAME, POS, MAPQ, CIGAR, RNEXT, PNEXT, TLEN, SEQ, QUAL, TAG, file_name)
+                        #if '*' not in RENAME:
                         insert_data(c, 'sam', data)
     
     conn.commit()
