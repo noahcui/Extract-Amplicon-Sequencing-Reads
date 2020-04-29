@@ -12,7 +12,7 @@ import sqlite3
 def create_table(c, table_name):
     cmd = "create table " + table_name + "(QNAME text,\
         FLAG int,\
-        RENAME text,\
+        REFNAME text,\
         POS int,\
         MAPQ int,\
         CIGAR text,\
@@ -37,7 +37,7 @@ def insert_headers(c, table_name, data):
     c.execute(cmd, data)
 
 def insert_data(c, table_name, data):
-    cmd = "INSERT INTO " + table_name + "(QNAME, NUM, FLAG, RENAME, POS, MAPQ, CIGAR, RNEXT, PNEXT, TLEN, SEQ, QUAL, TAG, FILE) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?);"
+    cmd = "INSERT INTO " + table_name + "(QNAME, NUM, FLAG, REFNAME, POS, MAPQ, CIGAR, RNEXT, PNEXT, TLEN, SEQ, QUAL, TAG, FILE) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?);"
     c.execute(cmd, data)
         
 if __name__ == '__main__':
@@ -58,7 +58,7 @@ if __name__ == '__main__':
                     if "@" not in fields[0]:
                         QNAME = fields[0]
                         FLAG = fields[1]
-                        RENAME = fields[2]
+                        REFNAME = fields[2]
                         POS = fields[3]
                         MAPQ = fields[4]
                         CIGAR = fields[5]
@@ -68,14 +68,19 @@ if __name__ == '__main__':
                         SEQ = fields[9]
                         QUAL = fields[10]
                         TAG= fields[11]
+                        for n in range(12, len(fields)):
+                            TAG = TAG + ('\t') + fields[n]
+                            n = n + 1
+
                         if QNAME in dict:
                             dict[QNAME] = dict[QNAME] + 1
                             NUM = dict[QNAME]
                         else:
                             dict[QNAME] = 0
                             NUM = 0
-                        data = (QNAME, NUM, FLAG, RENAME, POS, MAPQ, CIGAR, RNEXT, PNEXT, TLEN, SEQ, QUAL, TAG, file_name)
-                        #if '*' not in RENAME:
+                        
+                        data = (QNAME, NUM, FLAG, REFNAME, POS, MAPQ, CIGAR, RNEXT, PNEXT, TLEN, SEQ, QUAL, TAG, file_name)
+                        #if FLAG & 4 != 4:
                         insert_data(c, 'sam', data)
     
     conn.commit()

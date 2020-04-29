@@ -3,7 +3,6 @@
 import sys
 import sqlite3
 
-
 def create_table(c, table_name):
     cmd = "create table fasta(Reference text,\
         Query text,\

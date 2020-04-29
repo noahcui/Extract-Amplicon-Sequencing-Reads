@@ -6,7 +6,7 @@ import sqlite3
 def create_table_fasta(c, table_name):
     cmd = "create table fasta(Header text,\
         Seq text,\
-        primary key(Reference));"
+        primary key(Header));"
     c.execute(cmd)
     print("table created successfully, now inserting datas")
 
@@ -22,7 +22,7 @@ def create_table_sam(c, table_name):
     cmd = "create table " + table_name + "(QNAME text,\
         NUM int,\
         FLAG int,\
-        RENAME text,\
+        REFNAME text,\
         POS int,\
         MAPQ int,\
         CIGAR text,\
