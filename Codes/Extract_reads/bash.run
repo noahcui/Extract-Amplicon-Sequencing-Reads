@@ -1,0 +1,21 @@
+#!/bin/bash -f
+
+echo
+
+echo "start exporting datas from database to fastq files\n"
+
+mkdir Silva
+
+mkdir Green
+
+echo "Silva, Forward"
+python exportdata.py Silva.db cv.sql forward.sql dv.sql
+
+echo "Silva, Reverse"
+python exportdata.py Silva.db cv.sql reverse.sql dv.sql
+
+echo "Green, Forward"
+python exportdata.py Green.db cv.sql forward.sql dv.sql
+
+echo "Green, Reverse"
+python exportdata.py Green.db cv.sql reverse.sql dv.sql

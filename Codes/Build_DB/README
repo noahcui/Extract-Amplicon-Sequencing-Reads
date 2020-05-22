@@ -1,0 +1,5 @@
+PUT THOSE FILES UNDER THE SAME DIR WITH TARGET DATA FILES, EXCUTE create_table.py FIRST AND IMPORT DATAS ONLY ONCE
+Usage for create_table.py: python create_table.py DBNAME
+Usage for insert_fasta.py: python insert_fasta.py DBNAME FASTA_FILES
+Usage for insert_pos.py: python insert_pos.py DBNAME POSITION_FILES
+Usage for insert_sam.py: python insert_sam.py DBNAME SAM_FILES
