@@ -1,8 +1,11 @@
 #! /usr/bin/env python3
 
+# Import the os module to work with file and directories.
 import os
 
-directory = "/home/unhTW/share/mcbs913_2020/addiction/16S_Reference_Files/BWA_Alignments"
+# The path to where the SAM files are located are stored in a directory.
+# Note: There are two copies of this script to work with the two datasets included in this project. 
+directory = "/home/unhTW/share/mcbs913_2020/addiction/bwa_results/Public"
 
 # Surround code with a try block to determine if any errors occur with opening files. 
 try:
@@ -23,8 +26,7 @@ try:
                         # 4. Remove any reads that do not span the V4 region of the 16S rRNA gene (designated by commonly used forward and reverse primers to generate an amplicon).
                             if "@" not in fields[0] and fields[1] != "4":
                                 if int(fields[4]) >= 50:
-                                    if int(fields[3]) >= 515 and int(fields[3]) <= 806:
-                                        # Write lines that passed the filters to a new output file.
-                                        output.write(line)
+                                    # Write lines that passed the filters to a new output file.
+                                    output.write(line)
 except IOError:
     print("An error has occurred.")
