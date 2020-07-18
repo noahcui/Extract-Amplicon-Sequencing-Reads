@@ -9,3 +9,16 @@
 * Compare and contrast analyses of extracted amplicon data to whole shotgunmetagenomic data (alignments, taxonomic assignments, community structure, andgene catalogues)
 
 ## Use
+
+* Allignment stats:
+
+  * Counting total no. of alignments: `python count.py samfile` 
+  * Counts of organism: `python Pal_Result.py tsvfile`
+  * Counts of eukaryote: `python check_eukaryote.py samfile output.txt`
+ 
+ * Datebase: Please check Codes/querys 
+
+## Requirements
+
+* Please run a new tmux session:  ` tmux new -s mysession`
+
