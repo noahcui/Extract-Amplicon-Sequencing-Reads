@@ -20,7 +20,7 @@
  
    * - [Codes/Extract_reads/](https://github.com/hkcyf369/MCBS913-addiction/blob/master/Codes/Extract_reads/README.md)
 
-## 📌Requirements
+## 📌Notice
 
-* Please run a new tmux session:  ` tmux new -s mysession`
+* Extracting and sequencing takes a wile. So, if you are running on a server and connecting thu ssh, it could be a good idea to run in background(&) or run a new tmux session:  ` tmux new -s mysession`
 
